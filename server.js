@@ -8,6 +8,12 @@ app.get("/", function(req, res){
   res.sendFile(process.cwd() + "/home.html")
 });
 
+
+app.get("/reg", function(req, res){
+  res.sendFile(process.cwd() + "/register.html")
+});
+
+
 app.listen(PORT, function(){
   console.log("listening on port %s", PORT);
 });
